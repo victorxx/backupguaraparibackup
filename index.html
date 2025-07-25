@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aluguel de Apartamento em Guarapari - Contato Fácil e Fotos</title>
+  <meta name="description" content="Alugue seu apartamento em Guarapari com facilidade. Veja fotos reais do imóvel e entre em contato agora mesmo para garantir seu novo lar." />
+  <meta name="keywords" content="aluguel apartamento Guarapari, apartamento para alugar, contato aluguel Guarapari, apartamento praia Guarapari" />
+  <meta name="author" content="Seu Nome ou Empresa" />
+  <meta name="robots" content="index, follow" />
+
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aluguel de Apartamento em Guarapari - Contato Fácil e Fotos" />
+  <meta property="og:description" content="Alugue seu apartamento em Guarapari com facilidade. Veja fotos reais do imóvel e entre em contato agora mesmo para garantir seu novo lar." />
+
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aluguel de Apartamento em Guarapari - Contato Fácil e Fotos" />
+  <meta name="twitter:description" content="Alugue seu apartamento em Guarapari com facilidade. Veja fotos reais do imóvel e entre em contato agora mesmo para garantir seu novo lar." />
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/victorxx/guaraparilinhadotempo/refs/heads/main/guarapari4.jpeg" />
+  
+ 
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f8fa;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #333;
+    }
+    header, main, footer {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      text-align: center;
+      color: #2c3e50;
+    }
+    a.btn-contact {
+      display: inline-block;
+      padding: 14px 28px;
+      background: linear-gradient(135deg, #4a90e2, #357ABD);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(53, 122, 189, 0.5);
+      transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+      cursor: pointer;
+      margin-bottom: 30px;
+      user-select: none;
+      text-align: center;
+    }
+    a.btn-contact:hover,
+    a.btn-contact:focus {
+      background: linear-gradient(135deg, #357ABD, #4a90e2);
+      box-shadow: 0 6px 15px rgba(53, 122, 189, 0.7);
+      transform: translateY(-3px);
+      outline: none;
+    }
+    #slider {
+      width: 100%;
+      max-width: 700px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      background: #fff;
+    }
+    #slider img {
+      width: 100%;
+      display: none;
+      border-radius: 12px;
+      user-select: none;
+    }
+    #slider img.active {
+      display: block;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aluguel de Apartamento em Guarapari</h1>
+  </header>
+  <main>
+    <a href="https://formularioguarapari.pages.dev/" class="btn-contact" aria-label="Quer alugar o apartamento? Entre em contato">
+      QUER ALUGAR O APARTAMENTO? ENTRE EM CONTATO
+    </a>
+
+    <section id="slider" aria-label="Galeria de imagens do apartamento">
+      <img src="https://raw.githubusercontent.com/victorxx/guaraparilinhadotempo/refs/heads/main/guarapari4.jpeg" alt="Vista do apartamento em Guarapari" class="active" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/victorxx/guaraparilinhadotempo/refs/heads/main/guarapari5.jpeg" alt="Ambiente interno do apartamento em Guarapari" loading="lazy" />
+      <img src="https://raw.githubusercontent.com/victorxx/guaraparilinhadotempo/refs/heads/main/guarapari6.jpeg" alt="Área externa do apartamento em Guarapari" loading="lazy" />
+    </section>
+  </main>
+  <footer>
+    &copy;  Seu Nome ou Empresa. Todos os direitos reservados.
+  </footer>
+
+  <script>
+    // Slider automático simples
+    const slides = document.querySelectorAll('#slider img');
+    let currentIndex = 0;
+    const slideInterval = 4000; // 4 segundos
+
+    function showSlide(index) {
+      slides.forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+      });
+    }
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }, slideInterval);
+  </script>
+</body>
+</html>
